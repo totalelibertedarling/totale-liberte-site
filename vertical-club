@@ -9,7 +9,7 @@ const EventPage = () => {
           Totale Liberté Darling
         </h1>
         <p className="mt-4 text-lg md:text-xl font-[\'Press Start 2P\']">
-          Unser nächstes Event kommt bald – stay tuned!
+          Coming soon...
         </p>
         <a
           href="#"
