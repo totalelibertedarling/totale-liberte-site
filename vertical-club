@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totale Liberté Darling</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+        .event-img {
+            max-width: 80%;
+            height: auto;
+            cursor: pointer;
+            border: 2px solid white;
+            transition: transform 0.3s ease;
+        }
+        .event-img:hover {
+            transform: scale(1.05);
+        }
+        .event-info {
+            margin-top: 20px;
+            font-size: 16px;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Totale Liberté Darling</h1>
+        <a href="https://example.com" target="_blank" id="event-link">
+            <img src="event-poster.jpg" alt="Latest Event Poster" class="event-img" id="event-img">
+        </a>
+        <div class="event-info" id="event-info">
+            <p>Next event details coming soon...</p>
+        </div>
+    </div>
+
+    <script>
+        // Editable event details
+        const eventData = {
+            image: "https://your-image-url.com/latest-event.jpg", // Replace with actual image URL
+            link: "https://your-ticket-site.com", // Replace with ticket link
+            info: "Join us for an unforgettable night! Location: XYZ, Date: 12th April 2025."
+        };
+
+        document.getElementById("event-img").src = eventData.image;
+        document.getElementById("event-link").href = eventData.link;
+        document.getElementById("event-info").innerHTML = `<p>${eventData.info}</p>`;
+    </script>
+</body>
+</html>
